@@ -1,0 +1,16 @@
+class Animal(){
+    int x
+    int y
+
+    void merge(){
+        x++
+        z++
+        y++
+    }
+}
+
+class Arici extends Animal(){
+    inghimpa(){
+
+    }
+}
