@@ -1,0 +1,103 @@
+       /* Monitor mon1 = new Monitor("white", 300, 4000, 2000);
+        Monitor mon2 = new Monitor("Black", 300, 1920, 1080);
+
+        System.out.println("First\tSecond");
+        System.out.println(mon1.getColor() + "\t" + mon2.getColor());
+        if(mon1.getResolution() > mon2.getResolution()){
+            System.out.println("  " + mon1.getResolution() + " > " + mon2.getResolution());
+        } else if (mon1.getResolution() < mon2.getResolution()) {
+            System.out.println("  " + mon1.getResolution() + " < " + mon2.getResolution());
+        } else {
+            System.out.println("  " + mon1.getResolution() + " = " + mon2.getResolution());
+        }
+
+        if(mon1.getWidth() > mon2.getWidth()){
+            System.out.println(" " + mon1.getWidth() + " > " + mon2.getWidth());
+        } else if (mon1.getWidth() < mon2.getWidth()) {
+            System.out.println(" " + mon1.getWidth() + " < " + mon2.getWidth());
+        } else {
+            System.out.println(" " + mon1.getWidth() + " = " + mon2.getWidth());
+        }
+
+        if(mon1.getHeight() > mon2.getHeight()){
+            System.out.println(" " + mon1.getHeight() + " > " + mon2.getHeight());
+        } else if (mon1.getHeight() < mon2.getHeight()) {
+            System.out.println(" " + mon1.getHeight() + " < " + mon2.getHeight());
+        } else {
+            System.out.println(" " + mon1.getHeight() + " = " + mon2.getHeight());
+        }
+        */
+
+
+        Student student1 = new Student("Claude","Monet",19,9);
+        Student student2 = new Student("Vincent","VanGogh",20,5);
+        Student student3 = new Student("Leonardo","DaVinci",19,10);
+        Student student4 = new Student("Mike","Buonarroti",19,8);
+        Student student5 = new Student("Raphael","Sanzio",21,9);
+
+        System.out.println(" Student name\t Age\tOOP mark");
+        System.out.println(student1.getName() + "  " + student1.getSurname() + "    " + student1.getAge() + "       " + student1.getMark());
+        System.out.println(student2.getName() + " " + student2.getSurname() + "    " + student2.getAge() + "       " + student2.getMark());
+        System.out.println(student3.getName() + " " + student3.getSurname() + "    " + student3.getAge() + "       " + student3.getMark());
+        System.out.println(student4.getName() + " " + student4.getSurname() + "    " + student4.getAge() + "       " + student4.getMark());
+        System.out.println(student5.getName() + " " + student5.getSurname() + "    " + student5.getAge() + "       " + student5.getMark());
+
+        Student student6 = new Student("Stephen","Hawking",19,9);
+        Student student7 = new Student("Isaac","Newton",20,9);
+        Student student8 = new Student("Brook","Taylor",19,9);
+        Student student9 = new Student("Francis","Bacon",19,9);
+        Student student10 = new Student("Niels","Bohr",21,9);
+
+
+        System.out.println(student6.getName() + " " + student6.getSurname() + "    " + student6.getAge() + "       " + student6.getMark());
+        System.out.println(student7.getName() + " " + student7.getSurname() + "    " + student7.getAge() + "       " + student7.getMark());
+        System.out.println(student8.getName() + " " + student8.getSurname() + "    " + student8.getAge() + "       " + student8.getMark());
+        System.out.println(student9.getName() + " " + student9.getSurname() + "    " + student9.getAge() + "       " + student9.getMark());
+        System.out.println(student10.getName() + "  " + student10.getSurname() + "    " + student10.getAge() + "       " + student10.getMark());
+
+        Student student11 = new Student("Barack","Obama",19,9);
+        Student student12 = new Student("Franklin","Roosevelt",20,10);
+        Student student13 = new Student("Conan","O'Brien",22,8);
+        Student student14 = new Student("Bill","Gates",19,9);
+        Student student15 = new Student("Mark","Zuckerberg",18,10);
+
+
+        System.out.println(student11.getName() + " " + student11.getSurname() + "    " + student11.getAge() + "       " + student11.getMark());
+        System.out.println(student12.getName() + " " + student12.getSurname() + "    " + student12.getAge() + "       " + student12.getMark());
+        System.out.println(student13.getName() + " " + student13.getSurname() + "    " + student13.getAge() + "       " + student13.getMark());
+        System.out.println(student14.getName() + "  " + student14.getSurname() + "    " + student14.getAge() + "       " + student14.getMark());
+        System.out.println(student15.getName() + " " + student15.getSurname() + "    " + student15.getAge() + "       " + student15.getMark());
+
+        ArrayList<Student>listOfStudents = new ArrayList<>();
+
+        University hogwarts = new University("Hogwarts", 1560, listOfStudents);
+        System.out.println("University name:\t " + hogwarts.getUniversityName() + "\tFoundationYear: " + hogwarts.getFoundationYear() + "\t List of Students: ");
+        hogwarts.printListOfStudents();
+        hogwarts.addStudent(student1);
+        hogwarts.addStudent(student2);
+        hogwarts.addStudent(student3);
+        hogwarts.addStudent(student4);
+        hogwarts.addStudent(student5);
+
+        University cambridge = new University("Cambridge", 1209, listOfStudents);
+        cambridge.addStudent(student6);
+        cambridge.addStudent(student7);
+        cambridge.addStudent(student8);
+        cambridge.addStudent(student9);
+        cambridge.addStudent(student10);
+
+        University harvard = new University("Harvard", 1636, listOfStudents);
+        harvard.addStudent(student11);
+        harvard.addStudent(student12);
+        harvard.addStudent(student13);
+        harvard.addStudent(student14);
+        harvard.addStudent(student15);
+
+
+        System.out.println("\n\n\n***********************\n\n\n");
+        System.out.println(hogwarts.getAverageGrade());
+        System.out.println(cambridge.getAverageGrade());
+        System.out.println(harvard.getAverageGrade());
+
+        System.out.println(listOfStudents.size());
+

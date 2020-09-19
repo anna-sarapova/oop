@@ -44,6 +44,4 @@ public class Monitor {
     public int getHeight() {
         return height;
     }
-
-
 }
