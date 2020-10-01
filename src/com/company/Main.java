@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Monitor mon1 = new Monitor("white", 300, 4000, 2000);
+
+       Monitor mon1 = new Monitor("white", 300, 4000, 2000);
         Monitor mon2 = new Monitor("Black", 300, 1920, 1080);
 
         System.out.println("First\tSecond");
@@ -78,4 +79,5 @@ public class Main {
         System.out.println("University has the following students:");
         university2.printListOfStudents();
     }
+
 }
