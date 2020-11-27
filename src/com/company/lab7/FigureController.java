@@ -20,12 +20,4 @@ public class FigureController {
             }
         } return max;
     }
-
-
-
-
-
-
-
-
 }
